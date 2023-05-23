@@ -1,0 +1,743 @@
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;200;300;400;500;600;700;800&family=Macondo&family=Poppins:wght@200;300;400;500;600;700;800&family=Sacramento&family=Varela+Round&display=swap');
+
+:root{
+    --mainColor01: #f7efe7;
+    --mainColor02: #bfb0a0;
+    --mainColor03: #312c38;
+    --mainColor04: #e73c37;
+    --mainColor05: #f7f7f7;
+    --textColor01: #111111;
+    --textColor02: #333333;
+    --textColor03: #ffffff;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-family: "Poppins", sans-serif !important;
+}
+
+/* for header */
+header{
+    background-color: var(--mainColor03);
+}
+.headArea{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* background-color: darkgoldenrod; */
+    padding: 0px 25px 0px 0px !important;
+}
+
+/* for header Contact Numbers */
+.contactNumbers{
+    height: 6vh;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+.contactNumbers a{
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--textColor03);
+}
+.contactNumbers a i{
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 2px;
+}
+.contactNumbers a p{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+/* for header Social Links */
+.socialLinks{
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.socialLinks a{
+    display: flex;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: var(--textColor03);
+}
+.socialLinks a i{
+    font-size: 1.8em;
+    font-weight: 500;
+    transition: 0.5s;
+}
+.socialLinks a i:hover{
+    transform: rotate(360deg);
+}
+.fa-facebook-f:hover{color: #046aea;}
+.fa-instagram:hover{color: #ec4377;}
+.fa-twitter:hover{color: #2baaf8;}
+
+/* For Navbar */
+nav{
+    background-color: var(--mainColor05);
+    box-shadow: 0px 2px 8px 0px rgba(0,0,0,0.2);
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* background-color: #046aea; */
+}
+
+/* for Upper Navbar */
+.upperNavArea{
+    width: 100%;
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    position: relative;
+}
+
+.brandName{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 1rem;
+    padding: 5px !important;
+    /* background-color: #2baaf8; */
+}
+.brandName h1{
+    font-size: 3.4em;
+    font-family: 'Sacramento', cursive;
+    font-weight: bold;
+    color: var(--mainColor03);
+    margin-top: 6px !important;
+    letter-spacing: 0.2px;
+}
+.brandName .menuBtn{
+    display: none;
+}
+.brandLogo{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.brandLogo img{
+    height: 80%;
+}
+
+.searchLogInCart{
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    padding: 0px 20px !important;
+    /* background-color: lightgoldenrodyellow; */
+}
+.searchIcon, .signIn, .cart{
+    border: none;
+    background-color: transparent;
+    font-size: 2.2rem;
+    text-decoration: none;
+    color: var(--mainColor03);
+    position: relative;
+    /* background-color: greenyellow; */
+}
+abbr{
+    cursor: pointer;
+}
+.cart .counter{
+    position: absolute;
+    top: -6px;
+    right: -10px;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainColor04);
+    font-size: 0.5em;
+    border-radius: 100px;
+    text-align: center;
+    font-weight: bold;
+    color: var(--mainColor01);
+    font-family: 'K2D', sans-serif;
+}
+
+/* for Lower Navbar */
+.lowerNavArea{
+    width: 100%;
+    /* background-color: darkcyan; */
+}
+
+/* for Navigations ul */
+.navigations{
+    height: 7vh;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 1rem;
+    font-family: "K2D", sans-serif;
+    position: relative;
+    /* display: none; */
+    /* background-color: darkgoldenrod; */
+}
+/* for Navigations ul li's */
+.navigations ul li{
+    position: relative;
+}
+/* for Navigations all Links */
+.navigations li a{
+    position: relative;
+    text-decoration: none;
+    font-size: 1.8em;
+    color: var(--mainColor03);
+    font-weight: 600;
+    padding: 2px 5px;
+}
+
+/* For Home */
+.home{
+    position: relative;
+}
+.home::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.home:hover::before{
+    transform: scaleX(1);
+}
+
+/* For Dropdown Shirts */
+.Shirts{
+    position: relative;
+}
+.Shirts::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.Shirts:hover::before{
+    transform: scaleX(1);
+}
+.dropdown_Shirts_Navigations{
+    display: none;
+    position: absolute;
+    background-color: var(--mainColor05);
+    list-style: none;
+    min-width: 200px;
+    width: 200px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0px;
+    border-radius: 5px;
+    translate: -10px 2px;
+}
+.dropdown_Shirts_Navigations li{
+    width: 100%;
+    position: relative;
+}
+.dropdown_Shirts_Navigations li a {
+    color: var(--mainColor03);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown_Shirts_Navigations li a:hover {
+    background-color: var(--mainColor04);
+    color: var(--textColor03);
+}
+.dropdown_Shirts_Navigations li a i{
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.Shirts:hover .dropdown_Shirts_Navigations {
+    display: block;
+}
+
+/* For Dropdown Shirts Under Formal Shirts */
+.dropdown_Formal_Shirts_Navigations{
+    display: none;
+    position: absolute;
+    background-color: var(--mainColor05);
+    list-style: none;
+    min-width: 180px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0px;
+    border-radius: 5px;
+    translate: 201px -40px;
+}
+.dropdown_Formal_Shirts_Navigations li a {
+    padding: 5px 14px;
+    font-size: 1.7rem;
+}
+.Formal_Shirts:hover .dropdown_Formal_Shirts_Navigations {
+    display: block;
+}
+
+/* For Dropdown T-Shirts */
+.T_Shirts{
+    position: relative;
+}
+.T_Shirts::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.T_Shirts:hover::before{
+    transform: scaleX(1);
+}
+.dropdown_T_Shirts_Navigations{
+    display: none;
+    position: absolute;
+    background-color: var(--mainColor05);
+    list-style: none;
+    min-width: 230px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0px;
+    border-radius: 5px;
+    translate: -10px 2px;
+}
+.dropdown_T_Shirts_Navigations li{
+    width: 100%;
+    position: relative;
+}
+.dropdown_T_Shirts_Navigations li a {
+    color: var(--mainColor03);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown_T_Shirts_Navigations li a:hover {
+    background-color: var(--mainColor04);
+    color: var(--textColor03);
+}
+.dropdown_T_Shirts_Navigations li a i{
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.T_Shirts:hover .dropdown_T_Shirts_Navigations {
+    display: block;
+}
+
+/* For Dropdown Pants */
+.Pants{
+    position: relative;
+}
+.Pants::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.Pants:hover::before{
+    transform: scaleX(1);
+}
+.dropdown_Pants_Navigations{
+    display: none;
+    position: absolute;
+    background-color: var(--mainColor05);
+    list-style: none;
+    min-width: 180px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0px;
+    border-radius: 5px;
+    translate: -10px 2px;
+}
+.dropdown_Pants_Navigations li{
+    width: 100%;
+    position: relative;
+}
+.dropdown_Pants_Navigations li a {
+    color: var(--mainColor03);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown_Pants_Navigations li a:hover {
+    background-color: var(--mainColor04);
+    color: var(--textColor03);
+}
+.dropdown_Pants_Navigations li a i{
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.Pants:hover .dropdown_Pants_Navigations {
+    display: block;
+}
+
+/* For Dropdown Trousers */
+.Trousers{
+    position: relative;
+}
+.Trousers::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.Trousers:hover::before{
+    transform: scaleX(1);
+}
+.dropdown_Trousers_Navigations{
+    display: none;
+    position: absolute;
+    background-color: var(--mainColor05);
+    list-style: none;
+    min-width: 250px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0px;
+    border-radius: 5px;
+    translate: -10px 2px;
+}
+.dropdown_Trousers_Navigations li{
+    width: 100%;
+    position: relative;
+}
+.dropdown_Trousers_Navigations li a {
+    color: var(--mainColor03);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown_Trousers_Navigations li a:hover {
+    background-color: var(--mainColor04);
+    color: var(--textColor03);
+}
+.dropdown_Trousers_Navigations li a i{
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.Trousers:hover .dropdown_Trousers_Navigations {
+    display: block;
+}
+
+/* For Dropdown Ethinic Wear */
+.Ethinic_Wear{
+    position: relative;
+}
+.Ethinic_Wear::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.Ethinic_Wear:hover::before{
+    transform: scaleX(1);
+}
+.dropdown_Ethinic_Wear_Navigations{
+    display: none;
+    position: absolute;
+    background-color: var(--mainColor05);
+    list-style: none;
+    min-width: 230px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0px;
+    border-radius: 5px;
+    translate: -10px 2px;
+}
+.dropdown_Ethinic_Wear_Navigations li{
+    width: 100%;
+    position: relative;
+}
+.dropdown_Ethinic_Wear_Navigations li a {
+    color: var(--mainColor03);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown_Ethinic_Wear_Navigations li a:hover {
+    background-color: var(--mainColor04);
+    color: var(--textColor03);
+}
+.dropdown_Ethinic_Wear_Navigations li a i{
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.Ethinic_Wear:hover .dropdown_Ethinic_Wear_Navigations {
+    display: block;
+}
+
+/* For Dropdown Suiting */
+.Suiting{
+    position: relative;
+}
+.Suiting::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.Suiting:hover::before{
+    transform: scaleX(1);
+}
+.dropdown_Suiting_Navigations{
+    display: none;
+    position: absolute;
+    background-color: var(--mainColor05);
+    list-style: none;
+    min-width: 200px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0px;
+    border-radius: 5px;
+    translate: -10px 2px;
+}
+.dropdown_Suiting_Navigations li{
+    width: 100%;
+    position: relative;
+}
+.dropdown_Suiting_Navigations li a {
+    color: var(--mainColor03);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown_Suiting_Navigations li a:hover {
+    background-color: var(--mainColor04);
+    color: var(--textColor03);
+}
+.dropdown_Suiting_Navigations li a i{
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.Suiting:hover .dropdown_Suiting_Navigations {
+    display: block;
+}
+
+/* For Dropdown Watches */
+.Watches{
+    position: relative;
+}
+.Watches::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.Watches:hover::before{
+    transform: scaleX(1);
+}
+
+/* For Dropdown Footwear */
+.Footwear{
+    position: relative;
+}
+.Footwear::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.Footwear:hover::before{
+    transform: scaleX(1);
+}
+.dropdown_Footwear_Navigations{
+    display: none;
+    position: absolute;
+    background-color: var(--mainColor05);
+    list-style: none;
+    min-width: 220px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0px;
+    border-radius: 5px;
+    translate: -10px 2px;
+}
+.dropdown_Footwear_Navigations li{
+    width: 100%;
+    position: relative;
+}
+.dropdown_Footwear_Navigations li a {
+    color: var(--mainColor03);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown_Footwear_Navigations li a:hover {
+    background-color: var(--mainColor04);
+    color: var(--textColor03);
+}
+.dropdown_Footwear_Navigations li a i{
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.Footwear:hover .dropdown_Footwear_Navigations {
+    display: block;
+}
+
+/* For Dropdown Accessories */
+.Accessories{
+    position: relative;
+}
+.Accessories::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    border-radius: 100px;
+    background-color: var(--mainColor04);
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+.Accessories:hover::before{
+    transform: scaleX(1);
+}
+.dropdown_Accessories_Navigations{
+    display: none;
+    position: absolute;
+    background-color: var(--mainColor05);
+    list-style: none;
+    min-width: 200px;
+    box-shadow: 2px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    padding: 8px 0px;
+    border-radius: 5px;
+    translate: -10px 2px;
+}
+.dropdown_Accessories_Navigations li{
+    width: 100%;
+    position: relative;
+}
+.dropdown_Accessories_Navigations li a {
+    color: var(--mainColor03);
+    padding: 5px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 1.7rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropdown_Accessories_Navigations li a:hover {
+    background-color: var(--mainColor04);
+    color: var(--textColor03);
+}
+.dropdown_Accessories_Navigations li a i{
+    float: right;
+    font-size: 0.8em;
+    font-weight: bold;
+}
+.Accessories:hover .dropdown_Accessories_Navigations {
+    display: block;
+}

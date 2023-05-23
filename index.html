@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="mediaQuery.css">
+
+    <!-- CSS Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <!-- Font-Awesome-Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+    <!-- BoxIcons  -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<body>
+    <!-- For Header -->
+    <header> 
+        <div class="headArea container g-0">
+            <div class="contactNumbers">
+                <a href="#" class="numOne">
+                    <i class="fa-solid fa-phone"></i>
+                    <p class="m-0">+92 12 345 678 910</p>
+                </a>
+                <a href="#" class="numTwo">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    <p class="m-0">+92-332-1234567</p>
+                </a>
+            </div>
+
+            <div class="socialLinks">
+                <a href="#">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- For Navbar  -->
+    <nav>
+        <div class="navbar container g-0 p-0">
+            <div class="upperNavArea row m-0 p-0"> 
+
+                <div class="brandName col-4 g-0">
+                    <h1 class="m-0">Influential Apparels</h1>
+                    <button class="menuBtn">
+                        <i class='bx bx-menu-alt-left'></i>
+                    </button>
+                </div>
+                
+                <div class="brandLogo col-4 g-0">
+                    <img src="./Media/Images/Other/Logo.png" alt="">
+                </div>
+                
+                <div class="searchLogInCart col-4 g-0">
+                    <abbr title="Search">
+                        <button type="button" class="searchIcon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </abbr>
+                    <abbr title="Sign in">
+                        <button type="button" class="signIn">
+                            <i class="fa-solid fa-right-to-bracket"></i>
+                        </button>
+                    </abbr>
+                    <abbr title="Your Cart">
+                        <a href="#" class="cart">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <span class="counter">
+                                <p class="m-0">0</p>
+                            </span>
+                        </a>
+                    </abbr>
+                </div>
+            </div>
+
+            <div class="lowerNavArea row p-0 m-0">
+                <!-- Navigations -->
+                <ul class="navigations col-12 m-0">
+                    <!-- Home -->
+                    <li class="navItem home"><a href="#" class="navLink">Home</a></li>
+
+                    <!-- Shirts -->
+                    <li class="navItem Shirts">
+                        <a href="#" class="navLink Shirts_Link">Shirts</a>
+                        <!-- Dropdown Shirts -->
+                        <ul class="dropdown_Shirts_Navigations">
+                            <li class="Formal_Shirts">
+                                <a href="#" class="Formal_Shirts_Link">
+                                    Formal Shirts
+                                    <i class="fa-solid fa-angle-right"></i>
+                                </a>
+                                <ul class="dropdown_Formal_Shirts_Navigations">
+                                    <li><a href="#">Plain Shirts</a></li>
+                                    <li><a href="#">Check Shirts</a></li>
+                                    <li><a href="#">Stripe Shirts</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Designer Shirts</a></li>
+                            <li><a href="#">Printed Shirts</a></li>
+                        </ul> 
+                    </li>
+
+                    <!-- T-Shirts -->
+                    <li class="navItem T_Shirts">
+                        <a href="#" class="navLink T_Shirts_Link">T-Shirts</a>
+                        <!-- Dropdown T-Shirts -->
+                        <ul class="dropdown_T_Shirts_Navigations">
+                            <li><a href="#">Polo T-Shirts</a></li>
+                            <li><a href="#">Round Neck T-Shirts</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Pants -->
+                    <li class="navItem Pants">
+                        <a href="#" class="navLink Pants_Link">Pants</a>
+                        <!-- Dropdown Pants -->
+                        <ul class="dropdown_Pants_Navigations">
+                            <li><a href="#">Formal Pants</a></li>
+                            <li><a href="#">Cotton Pants</a></li>
+                            <li><a href="#">Jeans Pants</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Trousers -->
+                    <li class="navItem Trousers">
+                        <a href="#" class="navLink Trousers_Link">Trousers</a>
+                        <!-- Dropdown Trousers -->
+                        <ul class="dropdown_Trousers_Navigations">
+                            <li><a href="#">Casual Trousers</a></li>
+                            <li><a href="#">Formal Trousers & T-shirts</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Ethinic-Wear -->
+                    <li class="navItem Ethinic_Wear">
+                        <a href="#" class="navLink Ethinic_Wear_Link">Ethinic Wear</a>
+                        <!-- Dropdown Ethinic-Wear -->
+                        <ul class="dropdown_Ethinic_Wear_Navigations">
+                            <li><a href="#">Kameez Shalwar</a></li>
+                            <li><a href="#">Kurta Pajama</a></li>
+                            <li><a href="#">Waistcoats</a></li>
+                            <li><a href="#">Fabric</a></li>
+                            <li><a href="#">Kurta's</a></li>
+                            <li><a href="#">Shalwar & Panjama</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Suiting -->
+                    <li class="navItem Suiting">
+                        <a href="#" class="navLink Suiting_Link">Suiting</a>
+                        <!-- Dropdown Suiting -->
+                        <ul class="dropdown_Suiting_Navigations">
+                            <li><a href="#">Suit</a></li>
+                            <li><a href="#">Coat</a></li>
+                            <li><a href="#">Western Waistcoat</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Watches -->
+                    <li class="navItem Watches">
+                        <a href="#" class="navLink Watches_Link">Watches</a>
+                    </li>
+
+                    <!-- Footwear -->
+                    <li class="navItem Footwear">
+                        <a href="#" class="navLink Footwear_Link">Footwear</a>
+                        <!-- Dropdown Footwear -->
+                        <ul class="dropdown_Footwear_Navigations">
+                            <li><a href="#">Formal Shoes</a></li>
+                            <li><a href="#">Casual Shoes</a></li>
+                            <li><a href="#">Sneakers</a></li>
+                            <li><a href="#">Sandals</a></li>
+                            <li><a href="#">Loafers</a></li>
+                            <li><a href="#">Chappals & Slippers</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Accessories -->
+                    <li class="navItem Accessories">
+                        <a href="#" class="navLink Accessories_Link">Accessories</a>
+                        <!-- Dropdown Accessories -->
+                        <ul class="dropdown_Accessories_Navigations">
+                            <li><a href="#">Ties</a></li>
+                            <li><a href="#">Belt</a></li>
+                            <li><a href="#">Wallet</a></li>
+                            <li><a href="#">Pocket Square</a></li>
+                            <li><a href="#">Socks</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+    <!-- For Js Link -->
+    <script src="app.js"></script>
+    <!-- For Bootstrap Js Link -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+</body>
+</html>
