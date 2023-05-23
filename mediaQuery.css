@@ -37,7 +37,7 @@
         justify-content: flex-start;
         align-items: center;
         font-size: 1rem;
-        padding: 5px !important;
+        padding: 5px 15px !important;
     }
     .menuSearch .menuBtn{
         display: flex;
@@ -78,7 +78,7 @@
         display: none;
     }
     .signIn, .cart{
-        font-size: 2rem;
+        font-size: 2.1rem;
         padding: 0px 4px;
     }
     .cart .counter{
