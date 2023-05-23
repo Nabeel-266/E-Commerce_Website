@@ -32,7 +32,7 @@ header{
     display: flex;
     justify-content: space-between;
     /* background-color: darkgoldenrod; */
-    padding: 0px 25px 0px 0px !important;
+    padding: 0px 15px 0px 0px !important;
 }
 
 /* for header Contact Numbers */
@@ -105,6 +105,10 @@ nav{
     position: relative;
 }
 
+.menuSearch{
+    display: none;
+}
+
 .brandName{
     height: 10vh;
     display: flex;
@@ -121,9 +125,6 @@ nav{
     color: var(--mainColor03);
     margin-top: 6px !important;
     letter-spacing: 0.2px;
-}
-.brandName .menuBtn{
-    display: none;
 }
 .brandLogo{
     height: 10vh;

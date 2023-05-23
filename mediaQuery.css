@@ -12,7 +12,7 @@
     }
     .contactNumbers{
         width: 100%;
-        height: 5vh;
+        height: 4vh;
         display: flex;
         justify-content: center;
         
@@ -31,14 +31,15 @@
     .socialLinks{
         display: none;
     }
-    .brandName{
-        height: 8vh;
-        padding: 8px !important;
+    .menuSearch{
+        height: 10vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem;
+        padding: 5px !important;
     }
-    .brandName h1{
-        display: none;
-    }
-    .brandName .menuBtn{
+    .menuSearch .menuBtn{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -48,24 +49,41 @@
         font-size: 3.2em;
         padding: 0px;
     }
-    .brandLogo{
-        height: 8vh;
+    .menuSearch .searchIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 2em;
+        padding: 6px;
+        /* background-color: greenyellow; */
     }
-    
+    .brandName{
+        display: none;
+    }
+    .brandLogo{
+        height: 10vh;
+    }
     .searchLogInCart{
-        height: 8vh;
+        height: 10vh;
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 10px;
+        gap: 4px;
         padding: 0px 20px !important;
     }
-    .searchIcon, .signIn, .cart{
-        font-size: 1.8rem;
+    .searchIcon{
+        display: none;
+    }
+    .signIn, .cart{
+        font-size: 2rem;
+        padding: 0px 4px;
     }
     .cart .counter{
         top: -5px;
-        right: -8px;
+        right: -5px;
         width: 16px;
         height: 16px;
         font-size: 0.45em;
