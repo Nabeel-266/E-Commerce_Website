@@ -6,6 +6,7 @@
     --mainColor03: #312c38;
     --mainColor04: #e73c37;
     --mainColor05: #f7f7f7;
+    --mainColor06: #231f27;
     --textColor01: #111111;
     --textColor02: #333333;
     --textColor03: #ffffff;
@@ -20,6 +21,7 @@ html{
 }
 body{
     font-family: "Poppins", sans-serif !important;
+    position: relative;
 }
 
 /* for header */
@@ -741,4 +743,170 @@ abbr{
 }
 .Accessories:hover .dropdown_Accessories_Navigations {
     display: block;
+}
+
+/* For Sidebar Behind Overlay */
+.overlay{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    /* background-color: rgba(0, 0, 0, 0.4); */
+    backdrop-filter: blur(2px);
+    filter: brightness(0.5);
+}
+
+/* For Sidebar */
+.sidebar{
+    width: 70vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--mainColor06);
+    z-index: 10;
+    box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.4);
+}
+/* For Sidebar Header */
+.sidebarHeader{
+    width: 100%;
+    height: 60px;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    background-color: var(--mainColor03);
+    /* box-shadow: -2px 2px 8px 0px rgba(0, 0, 0, 0.5); */
+}
+.sidebarHeader .sideLogo{
+    height: 100%;
+    /* background-color: #2baaf8; */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px 12px;
+}
+.sidebarHeader .sideLogo img{
+    height: 70%;
+}
+.sidebarHeader .sidebarClose{
+    height: 100%;
+    /* background-color: #2baaf8; */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 15px 0px 0px;
+}
+.sidebarHeader .sidebarClose .closeBtn{
+    font-size: 2.5rem;
+    padding: 0px 5px !important;
+    border: none;
+    background-color: transparent;
+    color: var(--textColor03);
+}
+.closeBtn:active{
+    rotate: 360deg;
+    transition: 0.5s;
+}
+
+/* For Sidebar Navigations */
+.sidebarNav{
+    font-size: 1rem;
+    /* background-color: darkcyan; */
+    /* padding: 10px 0px !important; */
+}
+.sideNavigations{
+    list-style: none;
+    /* background-color: darkgoldenrod; */
+}
+.sideNavigations .sideItem{
+    width: 100%;
+    /* background-color: darkred; */
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 2px solid var(--mainColor03);
+}
+.sideNavigations .sideItem .sideLinks{
+    width: 85%;
+    height: 100%;
+    padding: 8px 0px 8px 12px;
+    /* background-color: darkorchid; */
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--textColor03);
+    text-transform: uppercase;
+}
+.sideNavigations .sideItem .sideDropdownBtn{
+    width: 15%;
+    font-size: 1.4em;
+    font-weight: bold;
+    border: none;
+    color: var(--textColor03);
+    background-color: transparent;
+}
+.sideHome a{
+    width: 100% !important;
+}
+
+/* For Dropdown Shirts */
+.dropdown_sideShirts{
+    /* background-color: green; */
+    width: 100%;
+    /* display: none; */
+}
+.dropdown_sideShirts .dropdownShirtItem{
+    width: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid var(--mainColor03);
+    /* border-bottom: 1px solid var(--mainColor03); */
+}
+.dropdownShirtItem .sideShirtDropdownLink{
+    width: 85%;
+    padding: 8px 0px 8px 24px !important;
+    /* background-color: darkorchid; */
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--textColor03);
+    text-transform: uppercase;
+}
+.dropdownShirtItem .sideDropdownBtn{
+    width: 15%;
+    font-size: 1.3em;
+    font-weight: bold;
+    border: none;
+    color: var(--textColor03);
+    background-color: transparent;
+}
+.designerShirts a, .printedShirts a{
+    width: 100% !important;
+}
+
+/* For Dropdown Formal Shirts */
+.dropdown_sideFormalShirts{
+    /* background-color: green; */
+    width: 100%;
+    /* display: none; */
+}
+.dropdown_sideFormalShirts .dropdownFormalShirtItem{
+    width: 100%;
+    /* background-color: lightcoral; */
+    display: flex;
+    border-top: 2px solid var(--mainColor03);
+    /* border-bottom: 1px solid var(--mainColor03); */
+}
+.dropdownFormalShirtItem .sideformalShirtDropdownLink{
+    width: 100%;
+    padding: 8px 0px 8px 36px !important;
+    /* background-color: darkorchid; */
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    color: var(--textColor03);
+    text-transform: uppercase;
 }

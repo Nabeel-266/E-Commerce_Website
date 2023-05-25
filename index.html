@@ -55,7 +55,7 @@
             <div class="upperNavArea row m-0 p-0"> 
 
                 <div class="menuSearch col-4 g-0">
-                    <button type="button" class="menuBtn">
+                    <button type="menu" class="menuBtn">
                         <i class='bx bx-menu-alt-left'></i>
                     </button>
                     <button type="button" class="searchIcon">
@@ -212,6 +212,80 @@
             </div>
         </div>
     </nav>
+
+    <!-- For Sidebar Behind Overlay -->
+    <div class="overlay"></div>
+
+    <!-- For Sidebar -->
+    <div class="sidebar" id="sidebar">
+
+        <div class="sidebarHeader row p-0 g-0">
+            <div class="sideLogo col-8 g-0">
+                <img src="./Media/Images/Other/Logo - Copy.png" alt="">
+            </div>
+            <div class="sidebarClose col-4 g-0">
+                <button type="button" class="closeBtn">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="sidebarNav row g-0">
+            <ul class="sideNavigations col-12 m-0">
+
+                <li class="sideItem sideHome g-0 m-0">
+                    <a href="#" class="sideLinks">Home</a>
+                    <!-- <button type="button" class="sideUpDown">
+                        <i class="fa-solid fa-plus"></i>
+                    </button> -->
+                </li>
+
+                <!-- Shirts -->
+                <li class="sideItem sideShirts">
+                    <a href="#" class="sideLinks">Shirts</a>
+                    <button type="button" class="sideDropdownBtn">
+                        <i class="fa-solid fa-angle-down"></i>
+                        <!-- <i class="fa-solid fa-angle-up"></i> -->
+                    </button>
+
+                    <!-- Dropdown Sidebar Shirts -->
+                    <div class="dropdown_sideShirts">
+                        <div class="dropdownShirtItem formalShirts">
+                            <a href="#" class="sideShirtDropdownLink">Formal Shirts</a>
+                            <button type="button" class="sideDropdownBtn">
+                                <i class="fa-solid fa-angle-down"></i>
+                            </button>
+
+                            <!-- Dropdown Sidebar Formal Shirts -->
+                            <div class="dropdown_sideFormalShirts">
+                                <div class="dropdownFormalShirtItem plainShirts">
+                                    <a href="#" class="sideformalShirtDropdownLink">Plain Shirts</a>
+                                </div>
+
+                                <div class="dropdownFormalShirtItem checkShirts">
+                                    <a href="#" class="sideformalShirtDropdownLink">Check Shirts</a>
+                                </div>
+
+                                <div class="dropdownFormalShirtItem stripeShirts">
+                                    <a href="#" class="sideformalShirtDropdownLink">Stripe Shirts</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdownShirtItem designerShirts">
+                            <a href="#" class="sideShirtDropdownLink">Designer Shirts</a>
+                        </div>
+
+                        <div class="dropdownShirtItem printedShirts">
+                            <a href="#" class="sideShirtDropdownLink">Printed Shirts</a>
+                        </div>
+                    </div>
+                </li>
+                
+
+            </ul>
+        </div>
+    </div>
 
 
 

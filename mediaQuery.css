@@ -2,8 +2,92 @@
 
 /* -------- Smartphones Mobile Small -------- */
 @media(max-width: 320px) {
-    
+    .headArea{
+        padding: 0px !important;
+    }
+    .contactNumbers{
+        width: 100%;
+        height: 3.8vh;
+        display: flex;
+        justify-content: center;
+    }
+    .contactNumbers a{
+        font-size: 1rem;
+    }
+    .contactNumbers a i{
+        font-size: 1.1em;
+        margin-bottom: 0px;
+    }
+    .contactNumbers a p{
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .socialLinks{
+        display: none;
+    }
+    .menuSearch{
+        height: 9vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 1rem;
+        padding: 5px 10px !important;
+    }
+    .menuSearch .menuBtn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 3em;
+        padding: 0px;
+    }
+    .menuSearch .searchIcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        font-size: 1.8em;
+        padding: 6px;
+    }
+    .brandName{
+        display: none;
+    }
+    .brandLogo{
+        height: 9vh;
+    }
+    .searchLogInCart{
+        height: 9vh;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 4px;
+        padding: 0px 15px !important;
+    }
+    .searchIcon{
+        display: none;
+    }
+    .signIn, .cart{
+        font-size: 1.8rem;
+        padding: 0px 3px;
+    }
+    .cart .counter{
+        top: -5px;
+        right: -5px;
+        width: 16px;
+        height: 16px;
+        font-size: 0.45em;
+    }
+    .navigations{
+        display: none;
+    }
 }
+
+
+
 
 /* -------- Smartphones Mobile Medium -------- */
 @media(min-width: 321px) and (max-width: 375px) {
@@ -37,7 +121,7 @@
         justify-content: flex-start;
         align-items: center;
         font-size: 1rem;
-        padding: 5px 15px !important;
+        padding: 5px 12px !important;
     }
     .menuSearch .menuBtn{
         display: flex;
@@ -71,15 +155,15 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 4px;
-        padding: 0px 20px !important;
+        gap: 5px;
+        padding: 0px 20px 0px 15px !important;
     }
-    .searchIcon{
+    .searchLogInCart .searchIcon{
         display: none;
     }
     .signIn, .cart{
         font-size: 2.1rem;
-        padding: 0px 4px;
+        padding: 0px 3px;
     }
     .cart .counter{
         top: -5px;
