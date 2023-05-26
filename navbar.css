@@ -943,21 +943,23 @@ abbr{
 /* For Sidebar Social Links */
 .sideSocialLinks{
     width: 100%;
+    position: relative;
+    bottom: 0;
+    left: 0;
     /* background-color: darkcyan; */
 }
 .sideSocialLinks .sideSocialItem{
     display: flex;
     justify-content: center;
     align-self: flex-end;
-    gap: 70px;
+    gap: 30px;
     padding: 10px 0px 10px 0px !important;
-    border-bottom: 2px solid var(--mainColor03);
+    border-top: 2px solid var(--mainColor03);
     /* background-color: darkkhaki; */
 }
 .sideSocialItem .sideSclLnk{
     text-decoration: none;
-    font-size: 2.2em;
-    letter-spacing: 0.6px;
+    font-size: 2.5em;
     color: var(--textColor03);
     text-transform: uppercase;
     /* background-color: darkseagreen; */
