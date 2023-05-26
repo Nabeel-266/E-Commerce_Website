@@ -118,6 +118,7 @@
     .menuSearch{
         height: 10vh;
         display: flex;
+        gap: 3px;
         justify-content: flex-start;
         align-items: center;
         font-size: 1rem;

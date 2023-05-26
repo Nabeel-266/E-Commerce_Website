@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;200;300;400;500;600;700;800&family=Macondo&family=Poppins:wght@200;300;400;500;600;700;800&family=Sacramento&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=K2D:wght@100;200;300;400;500;600;700;800&family=Macondo&family=Poppins:wght@200;300;400;500;600;700;800&family=Sacramento&family=Tsukimi+Rounded:wght@300;400;500;600;700&family=Varela+Round&display=swap');
 
 :root{
     --mainColor01: #f7efe7;
@@ -756,7 +756,6 @@ abbr{
     /* background-color: rgba(0, 0, 0, 0.4); */
     backdrop-filter: blur(2px);
     filter: brightness(0.5);
-    /* display: none; */
 }
 
 /* For Sidebar */
@@ -769,13 +768,14 @@ abbr{
     background-color: var(--mainColor06);
     z-index: 10;
     box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.4);
-    font-family: 'Varela Round', sans-serif;
-    /* display: none; */
+    font-family: 'Tsukimi Rounded', sans-serif;
+    transform: translateX(-100%);
+    transition: 0.3s;
 }
 /* For Sidebar Header */
 .sidebarHeader{
     width: 100%;
-    height: 10%;
+    height: 9%;
     /* background-color: rgba(0, 0, 0, 0.5); */
     background-color: var(--mainColor03);
     /* box-shadow: -2px 2px 8px 0px rgba(0, 0, 0, 0.5); */
@@ -814,7 +814,7 @@ abbr{
 /* For Sidebar Navigations */
 .sidebarNav{
     font-size: 1rem;
-    max-height: 90%;
+    max-height: 91%;
     overflow: auto;
     /* background-color: darkcyan; */
     /* padding: 10px 0px !important; */
@@ -825,18 +825,18 @@ abbr{
 }
 .sideNavigations .sideItem{
     width: 100%;
-    /* background-color: darkred; */
+    /* background-color: #f36560; */
     display: flex;
     flex-wrap: wrap;
     border-bottom: 2px solid var(--mainColor03);
 }
 .sideNavigations .sideItem .sideLinks{
     width: 85%;
-    padding: 8px 0px 8px 12px;
+    padding: 10px 0px 10px 12px;
     /* background-color: darkorchid; */
     text-decoration: none;
-    font-size: 1.4em;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-weight: 700;
     letter-spacing: 0.7px;
     color: var(--textColor03);
     text-transform: uppercase;
@@ -857,6 +857,7 @@ abbr{
 /* For Dropdown Sidebar Item */
 .dropdown_sideItem{
     width: 100%;
+    /* background-color: lightblue; */
 }
 .dropdown_sideItem .dropdown_Item{
     width: 100%;
@@ -866,13 +867,15 @@ abbr{
 }
 .dropdown_Item .dropdown_Link{
     width: 100%;
-    padding: 8px 0px 8px 24px !important;
+    padding: 10px 0px 10px 24px !important;
     text-decoration: none;
-    font-size: 1.4em;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-weight: 700;
     letter-spacing: 0.6px;
     color: var(--textColor03);
     text-transform: uppercase;
+    /* color: #ec342d; */
+    /* background-color: lightblue; */
 }
 .FormalShirts a{
     width: 85% !important;
@@ -899,10 +902,10 @@ abbr{
 }
 .dropdownFormalShirtItem .dropdownFormalShirtLink{
     width: 100% !important;
-    padding: 8px 0px 8px 36px !important;
+    padding: 10px 0px 10px 36px !important;
     text-decoration: none;
-    font-size: 1.3em;
-    font-weight: 400;
+    font-size: 1.2em;
+    font-weight: 700;
     letter-spacing: 0.6px;
     color: var(--textColor03);
     text-transform: uppercase;
@@ -926,8 +929,8 @@ abbr{
     display: flex;
     gap: 10px;
     text-decoration: none;
-    font-size: 1.4em;
-    font-weight: 400;
+    font-size: 1.3em;
+    font-weight: 500;
     letter-spacing: 0.6px;
     color: var(--textColor03);
     text-transform: uppercase;
@@ -946,17 +949,27 @@ abbr{
     display: flex;
     justify-content: center;
     align-self: flex-end;
-    gap: 40px;
-    padding: 12px 0px 12px 0px !important;
+    gap: 70px;
+    padding: 10px 0px 10px 0px !important;
     border-bottom: 2px solid var(--mainColor03);
     /* background-color: darkkhaki; */
 }
 .sideSocialItem .sideSclLnk{
     text-decoration: none;
-    font-size: 2em;
-    font-weight: 400;
+    font-size: 2.2em;
     letter-spacing: 0.6px;
     color: var(--textColor03);
     text-transform: uppercase;
     /* background-color: darkseagreen; */
+}
+
+
+
+
+
+
+
+
+.hide{
+    display: none;
 }
