@@ -147,7 +147,7 @@ nav{
     padding: 0px 20px !important;
     /* background-color: lightgoldenrodyellow; */
 }
-.searchIcon, .signIn, .cart{
+.search, .logIn, .cart{
     border: none;
     background-color: transparent;
     font-size: 2.2rem;
@@ -756,6 +756,7 @@ abbr{
     /* background-color: rgba(0, 0, 0, 0.4); */
     backdrop-filter: blur(2px);
     filter: brightness(0.5);
+    /* display: none; */
 }
 
 /* For Sidebar */
@@ -769,6 +770,7 @@ abbr{
     z-index: 10;
     box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.4);
     font-family: 'Varela Round', sans-serif;
+    /* display: none; */
 }
 /* For Sidebar Header */
 .sidebarHeader{
@@ -812,7 +814,6 @@ abbr{
 /* For Sidebar Navigations */
 .sidebarNav{
     font-size: 1rem;
-    height: 90%;
     max-height: 90%;
     overflow: auto;
     /* background-color: darkcyan; */
@@ -831,7 +832,6 @@ abbr{
 }
 .sideNavigations .sideItem .sideLinks{
     width: 85%;
-    height: 100%;
     padding: 8px 0px 8px 12px;
     /* background-color: darkorchid; */
     text-decoration: none;
@@ -874,10 +874,10 @@ abbr{
     color: var(--textColor03);
     text-transform: uppercase;
 }
-.formalShirts a{
+.FormalShirts a{
     width: 85% !important;
 }
-.formalShirts .sideDropdownBtn{
+.FormalShirts .sideDropdownBtn{
     width: 15%;
     font-size: 1.3em;
     font-weight: bold;
@@ -890,7 +890,7 @@ abbr{
 /* For Dropdown Formal Shirts */
 .dropdown_sideFormalShirts{
     width: 100%;
-    display: none;
+    /* display: none; */
 }
 .dropdown_sideFormalShirts .dropdownFormalShirtItem{
     width: 100%;
@@ -906,4 +906,57 @@ abbr{
     letter-spacing: 0.6px;
     color: var(--textColor03);
     text-transform: uppercase;
+}
+
+/* For Sidebar LogIn Search */
+.sidebarLogInSearch{
+    width: 100%;
+    /* display: none; */
+    /* background-color: darkcyan; */
+}
+.sidebarLogInSearch .sideUserItem{
+    width: 100%;
+    display: flex;
+    border-bottom: 2px solid var(--mainColor03);
+    /* background-color: darkkhaki; */
+}
+.sideUserItem .sideUserLink{
+    width: 100% !important;
+    padding: 10px 0px 10px 12px !important;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    font-size: 1.4em;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: var(--textColor03);
+    text-transform: uppercase;
+    /* background-color: darkseagreen; */
+}
+.sideUserLink i{
+    font-size: 1.7rem;
+}
+
+/* For Sidebar Social Links */
+.sideSocialLinks{
+    width: 100%;
+    /* background-color: darkcyan; */
+}
+.sideSocialLinks .sideSocialItem{
+    display: flex;
+    justify-content: center;
+    align-self: flex-end;
+    gap: 40px;
+    padding: 12px 0px 12px 0px !important;
+    border-bottom: 2px solid var(--mainColor03);
+    /* background-color: darkkhaki; */
+}
+.sideSocialItem .sideSclLnk{
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 400;
+    letter-spacing: 0.6px;
+    color: var(--textColor03);
+    text-transform: uppercase;
+    /* background-color: darkseagreen; */
 }
