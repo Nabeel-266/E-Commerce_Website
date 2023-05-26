@@ -768,11 +768,12 @@ abbr{
     background-color: var(--mainColor06);
     z-index: 10;
     box-shadow: 3px 0px 8px 0px rgba(0, 0, 0, 0.4);
+    font-family: 'Varela Round', sans-serif;
 }
 /* For Sidebar Header */
 .sidebarHeader{
     width: 100%;
-    height: 60px;
+    height: 10%;
     /* background-color: rgba(0, 0, 0, 0.5); */
     background-color: var(--mainColor03);
     /* box-shadow: -2px 2px 8px 0px rgba(0, 0, 0, 0.5); */
@@ -811,6 +812,9 @@ abbr{
 /* For Sidebar Navigations */
 .sidebarNav{
     font-size: 1rem;
+    height: 90%;
+    max-height: 90%;
+    overflow: auto;
     /* background-color: darkcyan; */
     /* padding: 10px 0px !important; */
 }
@@ -831,9 +835,9 @@ abbr{
     padding: 8px 0px 8px 12px;
     /* background-color: darkorchid; */
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.7px;
     color: var(--textColor03);
     text-transform: uppercase;
 }
@@ -845,36 +849,35 @@ abbr{
     color: var(--textColor03);
     background-color: transparent;
 }
-.sideHome a{
+.sideHome a,.sideWatches a{
     width: 100% !important;
 }
 
-/* For Dropdown Shirts */
-.dropdown_sideShirts{
-    /* background-color: green; */
+
+/* For Dropdown Sidebar Item */
+.dropdown_sideItem{
     width: 100%;
-    /* display: none; */
 }
-.dropdown_sideShirts .dropdownShirtItem{
+.dropdown_sideItem .dropdown_Item{
     width: 100%;
-    /* background-color: lightcoral; */
     display: flex;
     flex-wrap: wrap;
     border-top: 2px solid var(--mainColor03);
-    /* border-bottom: 1px solid var(--mainColor03); */
 }
-.dropdownShirtItem .sideShirtDropdownLink{
-    width: 85%;
+.dropdown_Item .dropdown_Link{
+    width: 100%;
     padding: 8px 0px 8px 24px !important;
-    /* background-color: darkorchid; */
     text-decoration: none;
     font-size: 1.4em;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
     color: var(--textColor03);
     text-transform: uppercase;
 }
-.dropdownShirtItem .sideDropdownBtn{
+.formalShirts a{
+    width: 85% !important;
+}
+.formalShirts .sideDropdownBtn{
     width: 15%;
     font-size: 1.3em;
     font-weight: bold;
@@ -882,31 +885,25 @@ abbr{
     color: var(--textColor03);
     background-color: transparent;
 }
-.designerShirts a, .printedShirts a{
-    width: 100% !important;
-}
+
 
 /* For Dropdown Formal Shirts */
 .dropdown_sideFormalShirts{
-    /* background-color: green; */
     width: 100%;
-    /* display: none; */
+    display: none;
 }
 .dropdown_sideFormalShirts .dropdownFormalShirtItem{
     width: 100%;
-    /* background-color: lightcoral; */
     display: flex;
     border-top: 2px solid var(--mainColor03);
-    /* border-bottom: 1px solid var(--mainColor03); */
 }
-.dropdownFormalShirtItem .sideformalShirtDropdownLink{
-    width: 100%;
+.dropdownFormalShirtItem .dropdownFormalShirtLink{
+    width: 100% !important;
     padding: 8px 0px 8px 36px !important;
-    /* background-color: darkorchid; */
     text-decoration: none;
-    font-size: 1.4em;
+    font-size: 1.3em;
     font-weight: 400;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.6px;
     color: var(--textColor03);
     text-transform: uppercase;
 }
